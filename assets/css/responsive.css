@@ -243,6 +243,9 @@
     #menu>.nav>i {
         font-size: 44px;
     }
+    .nav li a {
+        font-size: 26px;
+    }
     #copyright {
         font-size: 22px;
     }
