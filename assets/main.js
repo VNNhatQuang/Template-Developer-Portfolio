@@ -81,7 +81,7 @@ $(document).ready(function() {
     // show menu
     $('.menu').click(function() {
         $('#menu').fadeToggle("fast");
-
+        document.querySelector("#menu>.nav").setAttribute("style", "transform: translateX(0)");
         // Block Scrolling
         document.querySelector("html").setAttribute("style", "overflow: hidden");
     });
@@ -89,11 +89,15 @@ $(document).ready(function() {
     // hide menu
     $('.space-close').click(function() {
         $('#menu').fadeOut("fast");
+        // slide effect
+        document.querySelector("#menu>.nav").setAttribute("style", "transform: translateX(-100%)");
         // Allow Scrolling
         document.querySelector("html").setAttribute("style", "overflow: visible");
     })
     $('.nav>i').click(function() {
         $('#menu').fadeOut("fast");
+        // slide effect
+        document.querySelector("#menu>.nav").setAttribute("style", "transform: translateX(-100%)");
         // Allow Scrolling
         document.querySelector("html").setAttribute("style", "overflow: visible");
     })

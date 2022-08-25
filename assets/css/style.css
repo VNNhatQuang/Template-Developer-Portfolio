@@ -481,6 +481,8 @@ a:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     position: relative;
     z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
 }
 
 #menu>.nav>i {
@@ -513,9 +515,8 @@ a:hover {
 }
 
 .nav li a:hover {
-    color: #ccc;
-    font-size: 22px;
-    transition-duration: 0.4s;
+    color: #aaa;
+    transition-duration: 0.2s;
 }
 
 #menu>.space-close {

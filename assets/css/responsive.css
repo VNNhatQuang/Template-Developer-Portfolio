@@ -79,6 +79,12 @@
         font-size: 70px;
         margin-top: -20px;
     }
+    .menu>span:hover {
+        color: unset;
+    }
+    .menu>span:active {
+        color: orange;
+    }
     .wall>.avatar>img {
         width: 480px;
         height: 480px;
